@@ -75,7 +75,7 @@ app.listen(process.env.PORT || 3000, function() {
 // //List Id
 // //db9d7de2da
 
-// OTHER POSSIBLE WAYS, UPDATED...COME BACK AND FIGURE THIS SHIT OUT
+// OTHER POSSIBLE WAYS, UPDATED...
 
 //The mailchimp API process changed since her video... must run:
 //npm install @mailchimp/mailchimp_marketing
