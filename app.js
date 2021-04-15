@@ -1,3 +1,5 @@
+//jshint esversion:6
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
@@ -36,7 +38,7 @@ app.post("/", function(req, res) {
   const options = {
     method: "POST",
     auth: "brandon1:0aa91d9ba4df1a9d589087e7c2f9b083-us7"
-  }
+  };
 
   const request = https.request(url, options, function(response) {
 
@@ -59,7 +61,7 @@ app.post("/", function(req, res) {
 
 app.post("/failure", function(req, res) {
   res.redirect("/");
-})
+});
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server is running on port: " + port);
