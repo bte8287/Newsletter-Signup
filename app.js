@@ -34,10 +34,10 @@ app.post("/", function(req, res) {
   };
 
   const jsonData = JSON.stringify(data);
-  const url = "https://us7.api.mailchimp.com/3.0/lists/db9d7de2da";
+  const url = "https://us7.api.mailchimp.com/3.0/lists/<LIST_ID>";
   const options = {
     method: "POST",
-    auth: "brandon1:0aa91d9ba4df1a9d589087e7c2f9b083-us7"
+    auth: "<API_KEY>"
   };
 
   const request = https.request(url, options, function(response) {
@@ -70,10 +70,10 @@ app.listen(process.env.PORT || 3000, function() {
 
 
 // //API KEY
-// //0aa91d9ba4df1a9d589087e7c2f9b083-us7
+// //*****************
 //
 // //List Id
-// //db9d7de2da
+// //*****************
 
 // OTHER POSSIBLE WAYS, UPDATED...
 
@@ -83,11 +83,11 @@ app.listen(process.env.PORT || 3000, function() {
 
 //setting up mailchimp config
 // mailchimp.setConfig({
-//   apiKey: "0aa91d9ba4df1a9d589087e7c2f9b083-us7",
-//   server: "us7",
+//   apiKey: "<************>",
+//   server: "<***>",
 // });
 
-// const listID = "db9d7de2da";
+// const listID = "<list_ID>";
 // const subscribingUser = {
 //   firstName: firstName,
 //   lastName: lastName,
